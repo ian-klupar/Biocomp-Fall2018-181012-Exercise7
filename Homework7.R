@@ -7,7 +7,7 @@ odd <- function(x){
 a <- seq(1, nrow(x),2)
 x[a, ]
 }
-
+#example
 odd(iris)
 
 # 2. repeat a subset of last week, but use functions
@@ -16,7 +16,7 @@ species <- function(name){
   n <- iris[iris$Species == name,]
   return(nrow(n))
 }
-
+#example
 species('setosa')
 
 # return a dataframe for flowers with Sepal.Width greater than a value specified by function
@@ -24,7 +24,7 @@ sep.width <- function(measure){
   df <- iris[iris$Sepal.Width > measure,]
   return(df)
 }
-
+#example
 sep.width(4)
 
 # write the data for a given species to a comma-deliminated file with the species as name
@@ -32,7 +32,7 @@ write.species <- function(file){
   n <- iris[iris$Species == file,]
   write.csv(n, file = file)
 }
-
+#example
 write.species('setosa')
 
 
