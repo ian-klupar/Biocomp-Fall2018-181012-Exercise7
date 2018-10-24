@@ -30,7 +30,7 @@ compareEd = function(year1,year2){
   edu2 <- wages[wages$yearsSchool==year2, ]
   min2 <- min(edu2$wage)
   diff <- min1 -min2
-  return(diff)
+  return(plot(diff))
 }
 compareEd(10,12)
 
