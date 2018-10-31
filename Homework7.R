@@ -30,7 +30,7 @@ sep.width(4)
 # write the data for a given species to a comma-deliminated file with the species as name
 write.species <- function(file){
   n <- iris[iris$Species == file,]
-  write.csv(n, file = file)
+  write.csv(n, file = file) #Brittni: This doesn't have the file extension. We wanted to write a file called "setosa.csv". To do so, use "write.csv(n, file = paste(file, ".csv", sep="")". (-0.25) 
 }
 #example
 write.species('setosa')
